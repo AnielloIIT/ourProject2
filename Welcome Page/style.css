@@ -76,6 +76,7 @@ ul, li {
 /* ===== START OF FORM STYLING ===== */
 
 form {
+  display: grid;
   grid-template-columns: 50px 2fr;
   grid-gap: 12px;
   font-family: 'Open Sans', sans-serif;
@@ -83,7 +84,7 @@ form {
 
 label {
   grid-column: 1 / 2;
-  font-size: 20px;
+  font-size:12px;
 }
 
 input, select {
@@ -91,7 +92,10 @@ input, select {
 }
 
 button {
-  grid-column: 3/3;
+  grid-column: 1/3;
+  max-width: 100px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* ===== START OF CALENDAR CSS ===== */
@@ -106,10 +110,8 @@ button {
 .month{
   text-align: center;
   background: red;
-  font-size: 20px;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   color:white;
-  padding:2px;
   border: 1px solid;
 }
  /*Used two spans to display a break instead of using <br />*/
@@ -135,6 +137,11 @@ th, td {
 
 td:hover{
   background: black;
+}
+
+.month h6 {
+  font-size: 18px;
+  
 }
 
 /* ===== START OF NAVRBAR CSS ===== */
