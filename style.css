@@ -18,6 +18,8 @@ h2
 form
 {
           border: none;
+          margin-left: auto;
+          margin-right: auto;
 }
 
  fieldset
